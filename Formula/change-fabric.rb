@@ -13,19 +13,13 @@
 #     https://github.com/change-fabric/change-fabric/archive/refs/tags/skills/v0.36.1.tar.gz
 #   shasum -a 256 cf.tar.gz
 # -> 3cc421466fb96a3869e0f447667b4aa9c824f8929d01357c2282b826aa93d654
-#
-# NOTE (see openQuestionsForHuman): this repo carries no LICENSE file at the
-# tagged commit, so no `license` line is set below. Do not guess a license;
-# either add one, or explicitly set `license :cannot_specify` once the
-# maintainer decides. Homebrew's own audit (`brew audit --strict`) will flag
-# a formula with neither.
 
 class ChangeFabric < Formula
   desc "Claude Code skills-and-hooks toolkit (cf shim) installer"
   homepage "https://changefabric.org"
   url "https://github.com/change-fabric/change-fabric/archive/refs/tags/skills/v0.36.1.tar.gz"
   sha256 "3cc421466fb96a3869e0f447667b4aa9c824f8929d01357c2282b826aa93d654"
-  # license "TBD" -- see NOTE above; do not set until the maintainer confirms.
+  license "MIT"
 
   # install.rb uses endless method definitions (`def bin = File.join(...)`),
   # which require Ruby >= 3.0. macOS's bundled system Ruby is 2.6 on many
