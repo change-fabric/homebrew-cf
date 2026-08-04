@@ -81,8 +81,18 @@ class ChangeFabric < Formula
       ~/.claude by name, so any wiring done there would land in a directory
       Homebrew immediately deletes.
 
-      Run change-fabric-install again after `brew upgrade change-fabric`,
-      and after `brew upgrade ruby`, to keep the wired hook paths current.
+      Run change-fabric-install again after EVERY `brew upgrade
+      change-fabric`. The upgrade cannot apply itself, for the same reason
+      the install cannot, and it is not only new skills you would miss:
+      `brew upgrade` deletes the old versioned Cellar directory that every
+      ~/.claude/skills symlink points at, so the skills stay broken until
+      you re-run it.
+
+      Run it again after `brew upgrade ruby` too, which moves the
+      interpreter path baked into the wired hook commands.
+
+      To check the install: start a new `claude` session and confirm it
+      asks you to pick a merge mode before it answers anything.
     EOS
   end
 
