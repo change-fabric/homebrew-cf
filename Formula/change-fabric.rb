@@ -34,10 +34,9 @@
 class ChangeFabric < Formula
   desc "Claude Code skills-and-hooks toolkit (cf shim) installer"
   homepage "https://changefabric.org"
-  url "https://github.com/change-fabric/change-fabric/archive/refs/tags/skills/v0.36.1.tar.gz"
-  sha256 "3cc421466fb96a3869e0f447667b4aa9c824f8929d01357c2282b826aa93d654"
+  url "https://github.com/change-fabric/change-fabric/archive/refs/tags/skills/v0.38.0.tar.gz"
+  sha256 "fbcb8154d2e591720c967379bcc6c27b7c66298f157b3baa8ce813bea7f27a6b"
   license "MIT"
-  revision 1
 
   # install.rb uses endless method definitions (`def bin = File.join(...)`),
   # which require Ruby >= 3.0. macOS's bundled system Ruby is 2.6 on many
