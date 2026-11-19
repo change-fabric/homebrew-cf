@@ -34,8 +34,8 @@
 class ChangeFabric < Formula
   desc "Claude Code skills-and-hooks toolkit (cf shim) installer"
   homepage "https://changefabric.org"
-  url "https://github.com/change-fabric/change-fabric/archive/refs/tags/skills/v0.47.0.tar.gz"
-  sha256 "87533f417677fa0294820c339e7a8d4ac165b10e1ec9fc61269a3210503759b7"
+  url "https://github.com/change-fabric/change-fabric/archive/refs/tags/skills/v0.48.0.tar.gz"
+  sha256 "05748e27078096f342d2997bb090ecee6f85ce6a4f2a24583cd0104fb14561dd"
   license "MIT"
 
   # install.rb uses endless method definitions (`def bin = File.join(...)`),
